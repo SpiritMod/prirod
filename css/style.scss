@@ -1,6 +1,7 @@
 
 @import "compass";
 
+$size: 1px;
 
 body {
   background: url("../img/bg.jpg") no-repeat center 170px transparent;
@@ -77,6 +78,55 @@ a {
         }
       }
     }
+    .search {
+      margin-right: 30px;
+      form {
+        position: relative;
+        margin: 5px 0;
+        input[type="text"] {
+          color: #13b7a1; // text color
+          font-family: "Arial Narrow";
+          font-size: 14px;
+          width: 80px;
+          height: 20px;
+          margin: 0 0 0;
+          padding: 0 10px 0 25px;
+          border: 1px solid #fff;
+          background: transparent;
+          @include box-shadow(0 0 0 #fff);
+          @include transition(all 0.8s ease 0s);
+          &::-webkit-input-placeholder { /* WebKit browsers */
+            color: #13b7a1;
+          }
+          &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: #13b7a1;
+            opacity:  1;
+          }
+          &::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: #13b7a1;
+            opacity:  1;
+          }
+          &:-ms-input-placeholder { /* Internet Explorer 10+ */
+            color: #13b7a1;
+          }
+          &:focus {
+            border-color: #13b7a1;
+            width: 300px;
+          }
+        }
+        button[type="submit"] {
+          display: block;
+          position: absolute;
+          left: 5px;
+          top: 2px;
+          width: 17px;
+          height: 17px;
+          padding: 0 0;
+          margin: 0 0 0;
+          background: url("../img/icons/small/sprite.png") no-repeat 0 0 transparent;
+        }
+      }
+    }
     .links {
       a.zoom {
         color: #fff; // text color
@@ -102,9 +152,9 @@ a {
         }
         &:after {
           content: "";
-          background: url("../img/icons/small/site-map.png") no-repeat 0 0 transparent;
+          background: url("../img/icons/small/sprite.png") no-repeat -18px 0 transparent;
           width: 21px;
-          height: 15px;
+          height: 13px;
           display: block;
           position: absolute;
           left: -30px;
@@ -118,14 +168,183 @@ a {
     width: 100%;
     height: 84px;
     background: #e1f2ef;
+    .box-logo {
+      margin: 6px 0 0 0;
+      .site-name {
+        margin: 9px 0 0 15px;
+        h1 {
+          color: #09a38f;
+          font-family: "Arial Narrow";
+          font-size: 22px;
+          font-weight: bold;
+          line-height: 1.2;
+          margin: 0 0 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .block-phone {
+      margin: 18px 0 0;
+      .box-label {
+        display: block;
+        float: left;
+        margin-right: 15px;
+        p {
+          color: #000;
+          font-family: "Arial Narrow";
+          font-size: 14px;
+          margin: 0 0;
+          line-height: 3;
+        }
+      }
+      .numbers {
+        display: block;
+        float: right;
+        p {
+          margin: 0 0;
+          color: #000; // text color
+          font-family: "Arial Narrow";
+          font-size: 16px;
+          line-height: 1.5;
+        }
+      }
+    }
+    .social {
+      display: block;
+      float: left;
+      list-style: none;
+      margin: 26px 0 0 85px;
+      text-align: center;
+      li {
+        display: inline-block;
+        margin: 0 2px;
+        a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background: #fff;
+        }
+      }
+    }
   }
   .navigation {
     background: url("../img/menu-bg.jpg") no-repeat center top #239eab;
     height: 56px;
     display: block;
     width: 100%;
+    position: relative;
+    .row {
+      width: 970px;
+      max-width: 970px;
+      min-width: 970px;
+      margin: 0 auto;
+      .small-12 {
+        position: inherit;
+      }
+    }
     ul.menu {
       margin: 0 0 0;
+      > li {
+        display: block;
+        float: left;
+        width: 20%;
+        i {
+          color: #fff;
+          font-family: "Arial Narrow";
+          font-size: 18px;
+          font-weight: bold;
+          font-style: normal;
+          height: 56px;
+          width: 100%;
+          display: inline-block;
+          text-align: center;
+          @include transition(all 0.4s ease 0s);
+          &:hover {
+            background: #10747c;
+          }
+          &:after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            width: 0.1%;
+          }
+          span {
+            text-align: center;
+            display: inline-block;
+            max-width: 97.9%;
+            vertical-align: middle;
+            line-height: 1.2;
+          }
+        }
+        .box-sub-menu {
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 56px;
+          right: 0;
+          z-index: 10;
+          padding: 12px 0;
+          background: #10757c;
+          background: -moz-linear-gradient(top, #10757c 0%, #34a2ae 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, #10757c), color-stop(100%, #34a2ae));
+          background: -webkit-linear-gradient(top, #10757c 0%, #34a2ae 100%);
+          background: -o-linear-gradient(top, #10757c 0%, #34a2ae 100%);
+          background: -ms-linear-gradient(top, #10757c 0%, #34a2ae 100%);
+          background: linear-gradient(to bottom, #10757c 0%, #34a2ae 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10757c', endColorstr='#34a2ae', GradientType=0 );
+          .item-menu {
+            display: block;
+            float: left;
+            width: 33.333%;
+            padding: 0 10px 0;
+            .title {
+              color: #e0f1ef;
+              font-family: "Arial Narrow";
+              font-size: 16px;
+              line-height: 1;
+              font-weight: bold;
+              margin: 0 0 10px 0;
+            }
+            ul.sub-menu {
+              list-style: none;
+              margin: 0 0 0;
+              padding: 0 0;
+              li {
+                display: inline-block;
+                width: 100%;
+                margin: 0 0 0;
+                padding: 0 0 0 0;
+                a {
+                  color: #e0f1ef;
+                  font-family: "Arial Narrow";
+                  font-size: 16px;
+                  line-height: 1.2;
+                  font-weight: normal;
+                  display: inline-block;
+                  position: relative;
+                  padding: 0 0 0 18px;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                  &:before {
+                    content: "﹣";
+                    color: #e0f1ef;
+                    font-family: "Arial Narrow";
+                    font-size: 16px;
+                    line-height: 1;
+                    font-weight: normal;
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -161,5 +380,28 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
   .icon {
     background-image: url(example2x.png);
+  }
+
+  .header {
+    .tools {
+      .search {
+        form {
+          button[type="submit"] {
+            background: url("../img/icons/large/sprite.png") no-repeat 0 0 transparent;
+            @include background-size(200px auto);
+          }
+        }
+      }
+      .links {
+        a.site-map {
+          &:after {
+            content: "";
+            background: url("../img/icons/large/sprite.png") no-repeat -17px 0 transparent;
+            @include background-size(200px auto);
+            width: 22px;
+          }
+        }
+      }
+    }
   }
 }
