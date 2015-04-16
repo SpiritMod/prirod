@@ -1,6 +1,7 @@
 
 @import "compass";
 
+
 body {
   background: url("../img/bg.jpg") no-repeat center 170px transparent;
   //font-family: 'Roboto', sans-serif;
@@ -42,13 +43,91 @@ a {
   min-width: 970px;
 }
 
+a {
+  outline: none;
+  color: #13b7a1;
+  font-family: "Arial Narrow";
+  font-size: 14px;
+  &:hover {
+    color: #13b7a1;
+  }
+}
+
 .header {
   height: 170px;
   .tools {
     height: 30px;
     background: #fff;
+    display: block;
+    width: 100%;
+    .language {
+      a {
+        color: #fff; // text color
+        font-family: "Arial Narrow";
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        background: #21a1aa;
+        @include transition(all 0.4s ease 0s);
+        &:hover {
+          background: #16b3a4;
+        }
+      }
+    }
+    .links {
+      a.zoom {
+        color: #fff; // text color
+        font-family: "Arial Narrow";
+        font-size: 14px;
+        font-weight: bold;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        margin: 0 0 0 25px;
+        background: #000;
+        @include transition(all 0.4s ease 0s);
+        &:hover {
+          background: #16b3a4;
+        }
+      }
+      a.site-map {
+        position: relative;
+        margin: 0 0 0 30px;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:after {
+          content: "";
+          background: url("../img/icons/small/site-map.png") no-repeat 0 0 transparent;
+          width: 21px;
+          height: 15px;
+          display: block;
+          position: absolute;
+          left: -30px;
+          top: 0;
+        }
+      }
+    }
   }
-
+  .header-region {
+    display: block;
+    width: 100%;
+    height: 84px;
+    background: #e1f2ef;
+  }
+  .navigation {
+    background: url("../img/menu-bg.jpg") no-repeat center top #239eab;
+    height: 56px;
+    display: block;
+    width: 100%;
+    ul.menu {
+      margin: 0 0 0;
+    }
+  }
 }
 
 
@@ -72,5 +151,15 @@ a {
   .bottom {
     background: url("../img/footer-bg.jpg") no-repeat center top transparent;
     height: 87px;
+  }
+}
+
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .icon {
+    background-image: url(example2x.png);
   }
 }
