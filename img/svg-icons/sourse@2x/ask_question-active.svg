@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="145.085px" height="140.979px" viewBox="-37.065 -33.024 145.085 140.979"
+	 enable-background="new -37.065 -33.024 145.085 140.979" xml:space="preserve">
+<g>
+	<polygon fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="10.473,77.982 -27.844,52.941 -36.527,14.564 
+		-11.52,-19.178 35.479,-32.505 82.477,-19.178 107.482,14.564 98.801,52.941 60.483,77.982 	"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="-11.52" y1="-19.178" x2="-27.844" y2="52.941"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="107.482" y1="14.564" x2="60.483" y2="77.982"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="98.801" y1="52.941" x2="82.477" y2="-19.178"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="-36.527" y1="14.564" x2="35.479" y2="-32.505"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="35.479" y1="-32.505" x2="107.482" y2="14.564"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="-36.527" y1="14.564" x2="10.473" y2="77.982"/>
+	<polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="98.801,52.941 10.473,77.982 10.473,107.085 60.483,77.982 
+			"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M60.483,77.982"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="10.473" y1="107.085" x2="53.585" y2="65.757"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="-27.844" y1="52.941" x2="53.585" y2="65.757"/>
+	<g>
+		<g>
+			<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M23.626,7.906l-6.256-7.04l10.022-11.051h22.296l9.221,10.25
+				v16.838L42.87,32.677v6.148h-9.226V28.402l16.042-15.775V3.722l-4.092-4.549H31.563L23.626,7.906z"/>
+		</g>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="27.393" y1="-10.184" x2="23.626" y2="7.906"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="17.368" y1="0.865" x2="31.564" y2="-0.827"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="27.393" y1="-10.184" x2="45.597" y2="-0.827"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="45.597" y1="-0.827" x2="49.688" y2="-10.184"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="49.688" y1="3.722" x2="58.909" y2="0.066"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="49.688" y1="3.722" x2="58.909" y2="16.904"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="58.909" y1="16.904" x2="33.648" y2="28.402"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="49.688" y1="12.624" x2="42.874" y2="32.677"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="33.648" y1="28.402" x2="42.874" y2="32.677"/>
+		<polygon fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="36.353,53.822 33.648,51.115 33.648,47.29 36.353,44.585 
+			40.179,44.585 42.882,47.29 42.882,51.115 40.179,53.822 		"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="42.882" y1="51.738" x2="33.648" y2="47.29"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="40.179" y1="44.585" x2="38.976" y2="49.857"/>
+	</g>
+</g>
+</svg>

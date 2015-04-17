@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   background: url("../img/bg.jpg") no-repeat center 170px transparent;
+  font-family: "Arial Narrow";
   font-size: 16px;
 }
 
@@ -25,7 +26,6 @@ a {
   min-height: 100%;
   margin: 0 auto;
   min-width: 970px;
-  background-color: #fff;
 }
 
 .push {
@@ -270,6 +270,7 @@ a:hover {
   width: 100%;
   display: inline-block;
   text-align: center;
+  cursor: pointer;
   -webkit-transition: all 0.4s ease;
   -webkit-transition-delay: 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -286,6 +287,9 @@ a:hover {
   vertical-align: middle;
   width: 0.1%;
 }
+.header .navigation ul.menu > li i.active {
+  background: #10747c;
+}
 .header .navigation ul.menu > li i span {
   text-align: center;
   display: inline-block;
@@ -294,7 +298,7 @@ a:hover {
   line-height: 1.2;
 }
 .header .navigation ul.menu > li .box-sub-menu {
-  display: block;
+  display: none;
   position: absolute;
   left: 0;
   top: 56px;
@@ -360,6 +364,15 @@ a:hover {
   left: 0;
   top: 0;
 }
+.header .navigation ul.menu > li .box-sub-menu .close {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url("../img/icons/small/sprite.png") no-repeat -40px 0 transparent;
+}
 
 .footer {
   height: 294px;
@@ -384,11 +397,67 @@ a:hover {
   height: 87px;
 }
 
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  .icon {
-    background-image: url(example2x.png);
-  }
+.main {
+  display: block;
+  width: 100%;
+}
 
+.block-resources .block-title {
+  background: url("../img/resources-title.jpg") no-repeat center top;
+  height: 47px;
+  width: 100%;
+  margin: 0 0 0;
+  color: #75ebd3;
+  font-family: "Arial Narrow";
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 47px;
+}
+.block-resources .content {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 574px;
+  background: url("../img/resources-map.png") no-repeat center transparent;
+}
+.block-resources .content .item {
+  display: block;
+  position: absolute;
+}
+.block-resources .content .item a {
+  color: #137185;
+  font-family: "Arial Narrow";
+  font-size: 16px;
+  font-weight: bold;
+}
+.block-resources .content .item a:hover {
+  text-decoration: underline;
+}
+.block-resources .content .item.item-1 {
+  left: 56px;
+  top: 40px;
+}
+.block-resources .content .item.item-1 .icon {
+  float: left;
+  margin: 0 22px 0 0;
+}
+.block-resources .content .item.item-1 a {
+  margin: 13px 0;
+}
+
+.icon.animal {
+  display: block;
+  width: 82px;
+  height: 50px;
+  background: url("../img/svg-icons/sourse@2x/animal_resources.svg");
+  -webkit-background-size: 82px 50px;
+  -moz-background-size: 82px 50px;
+  -o-background-size: 82px 50px;
+  background-size: 82px 50px;
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
   .header .tools .search form button[type="submit"] {
     background: url("../img/icons/large/sprite.png") no-repeat 0 0 transparent;
     -webkit-background-size: 200px auto;
@@ -404,5 +473,12 @@ a:hover {
     -o-background-size: 200px auto;
     background-size: 200px auto;
     width: 22px;
+  }
+  .header .navigation ul.menu > li .box-sub-menu .close {
+    background: url("../img/icons/large/sprite.png") no-repeat -39px 0 transparent;
+    -webkit-background-size: 200px auto;
+    -moz-background-size: 200px auto;
+    -o-background-size: 200px auto;
+    background-size: 200px auto;
   }
 }

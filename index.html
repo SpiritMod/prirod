@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -66,7 +68,7 @@
                 <div class="navigation">
                     <div class="row">
                         <div class="small-12 columns">
-                            <ul class="menu">
+                            <ul class="menu" id="main-menu">
                                 <li>
                                     <i class="nolink"><span>Министерство</span></i>
                                     <div class="box-sub-menu">
@@ -117,23 +119,167 @@
                                                         </li>
                                                     </ul>
                                                 </div>
+                                                <a class="close"></a>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
                                 <li>
                                     <i class="nolink"><span>Деятельность</span></i>
+                                    <div class="box-sub-menu">
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <div class="item-menu">
+                                                    <h5 class="title">О Министерстве</h5>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="#">Положение о министерстве</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Структура министерства</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Руководство</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Государственная гражданская служба и кадры</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Контакты</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Государственная гражданская служба и кадры</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Контакты</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Государственная гражданская служба и кадры</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Контакты</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item-menu">
+                                                    <h5 class="title">Подведомственные организации</h5>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="#">Контакты</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="close"></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <i class="nolink"><span>Законодательство</span></i>
+                                    <div class="box-sub-menu">
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <div class="item-menu">
+                                                    <h5 class="title">О Министерстве</h5>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="#">Положение о министерстве</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Структура министерства</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Руководство</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Государственная гражданская служба и кадры</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Контакты</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="close"></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <i class="nolink"><span>Об окружающей среде</span></i>
+                                    <div class="box-sub-menu">
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <div class="item-menu">
+                                                    <h5 class="title">О Министерстве</h5>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="#">Положение о министерстве</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Структура министерства</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Руководство</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Государственная гражданская служба и кадры</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Контакты</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="close"></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li>
                                     <i class="nolink"><span>Взаимодействие с общественностью</span></i>
+                                    <div class="box-sub-menu">
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <div class="item-menu">
+                                                    <h5 class="title">О Министерстве</h5>
+                                                    <ul class="sub-menu">
+                                                        <li>
+                                                            <a href="#">Положение о министерстве</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Структура министерства</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Руководство</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Государственная гражданская служба и кадры</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Контакты</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <a class="close"></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <div class="block-resources">
+                            <h2 class="block-title">Природные ресурсы и охрана окружающей среды</h2>
+                            <div class="content">
+                                <div class="item item-1">
+                                    <div class="icon animal"></div>
+                                    <a href="#">Животный мир</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,8 +305,6 @@
         </div>
     </div>
 
-    
-    <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
