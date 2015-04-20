@@ -15,10 +15,21 @@ $(document).ready(function() {
                 $('#main-menu li').find('.box-sub-menu.show').removeClass('show').fadeOut();
             });
         }
-
-
     });
 
+
+
+    $("#baners").owlCarousel({
+        items : 6, //10 items above 1000px browser width
+        itemsDesktop : [1000,6], //5 items between 1000px and 901px
+        itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+        autoPlay: 5000,
+        navigation: true,
+        pagination: false
+    });
+
+
+    //$('.scroll-pane').jScrollPane();
 
 
 
