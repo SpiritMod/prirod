@@ -7,25 +7,13 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css"/>
-    <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css"/>
-    <!--<link rel="stylesheet" href="js/owl-carousel/owl.theme.css">-->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/owl-carousel/owl.carousel.js"></script>
-    <!-- the mousewheel plugin - optional to provide mousewheel support -->
-    <script type="text/javascript" src="js/jscrollpane/jquery.mousewheel.js"></script>
-    <!-- the jScrollPane script -->
-    <script type="text/javascript" src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
-        $(function()
-        {
-            $('.scroll-pane').jScrollPane();
-        });
-    </script>
 </head>
-<body>
+<body class="not-front">
 
     <div class="page">
         <div class="container">
@@ -285,198 +273,227 @@
                 </div>
             </div>
             <div class="main">
-                <div class="row">
-                    <div class="small-12 columns">
-                        <div class="block-resources">
-                            <h2 class="block-title">Природные ресурсы и охрана окружающей среды</h2>
-                            <div class="content">
-                                <div class="weather">
-                                    <p class="title">Погода в Краснодаре</p>
-                                    <div class="weather-info">
-                                        <div class="temperature">+23<sup>o</sup></div>
-                                        <div class="img">
-                                            <img src="img/weather-1.png" alt="img"/>
+                <div class="menu-resources">
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <div class="box-title">
+                                <a class="show-resourses">Природные ресурсы и охрана окружающей среды</a>
+                            </div>
+                            <div class="small-block-resourses">
+                                <h4>Природные ресурсы и охрана окружающей среды</h4>
+                                <ul class="small-block-grid-4">
+                                    <li>
+                                        <div class="item item-1">
+                                            <div class="icon animal"></div>
+                                            <a href="#">Животный мир</a>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="item item-1">
-                                    <div class="icon animal"></div>
-                                    <a href="#">Животный мир</a>
-                                </div>
-                                <div class="item item-2">
-                                    <div class="icon aquatic"></div>
-                                    <a href="#">Водные биологические<br/>ресурсы</a>
-                                </div>
-                                <div class="item item-3">
-                                    <div class="icon hunting"></div>
-                                    <a href="#">Охотничьи ресурсы</a>
-                                </div>
-                                <div class="item item-4">
-                                    <div class="icon forestry"></div>
-                                    <a href="#">Лесное хозяйство</a>
-                                </div>
-                                <div class="item item-5">
-                                    <div class="icon water"></div>
-                                    <a href="#">Водные ресурсы</a>
-                                </div>
-                                <div class="item item-6">
-                                    <div class="icon subsoil"></div>
-                                    <a href="#">Недропользование</a>
-                                </div>
-                                <div class="item item-7">
-                                    <div class="icon protected"></div>
-                                    <a href="#">Особо охраняемые<br/>природные территории</a>
-                                </div>
-                                <div class="item item-8">
-                                    <div class="icon book"></div>
-                                    <a href="#">Красная книга<br/>Краснодарского края </a>
-                                </div>
+                                    </li>
+                                    <li>
+                                        <div class="item item-3">
+                                            <div class="icon hunting"></div>
+                                            <a href="#">Охотничьи ресурсы</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item item-5">
+                                            <div class="icon water"></div>
+                                            <a href="#">Водные ресурсы</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item item-7">
+                                            <div class="icon protected"></div>
+                                            <a href="#">Особо охраняемые<br/>природные территории</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item item-2">
+                                            <div class="icon aquatic"></div>
+                                            <a href="#">Водные биологические<br/>ресурсы</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item item-4">
+                                            <div class="icon forestry"></div>
+                                            <a href="#">Лесное хозяйство</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item item-6">
+                                            <div class="icon subsoil"></div>
+                                            <a href="#">Недропользование</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item item-8">
+                                            <div class="icon book"></div>
+                                            <a href="#">Красная книга<br/>Краснодарского края </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="close-small-resourses"></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="front-content">
-                    <div class="content row">
-                        <div class="small-12 columns">
-                            <div class="block-news">
-                                <h2 class="block-title">Новости и события</h2>
-                                <div class="news-scroll scroll-pane horizontal-only">
-                                    <div class="horizontal-wrapper" style="width: 1900px;">
-                                        <div class="news-item">
-                                            <div class="date">20.11.2014</div>
-                                            <div class="title">
-                                                <a href="#">Вниманию охотпользователей!</a>
-                                            </div>
-                                            <div class="body">
-                                                <p>Министерством природных ресурсов Краснодарского края размещены на сайте вопросы по проверке знаний кандидатов в инспектора производственного охотничьего контроля. Охотпользователи Краснодарского края, заключившие охотхозяйственное соглашение, имеют право направить в министерство природных ресурсов Краснодарского края заявки на проверку знаний их специалистов с целью получения</p>
-                                            </div>
-                                            <div class="more">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <ul class="breadcrumbs">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Министерство</a></li>
+                            <li class="current"><a href="#">Новости</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-content row">
+                    <div class="small-12 columns">
+                        <div class="page-container">
+                            <div class="sidebar-left">
+                                <dl class="accordion-menu accordion" data-accordion>
+                                    <dd class="accordion-navigation">
+                                        <a href="#panel1b">О Министерстве</a>
+                                        <div id="panel1b" class="content">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="#">Положение о министерстве</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Структура министерства</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Руководство</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Государственная гражданская служба и кадры</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Контакты</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="news-item">
-                                            <div class="date">18.11.2014</div>
-                                            <div class="title">
-                                                <a href="#">Научно-практическая конференция «Охрана окружающей среды и обеспечение экологической безопасности Краснодарского края»</a>
-                                            </div>
-                                            <div class="body">
-                                                <p>16-17 октября 2014 года в г. Краснодар состоялась научно-практическая конференция «Охрана окружающей среды и обеспечение экологической безопасности Краснодарского края».знаний их специалистов с целью получения удостоверений производственных охотничьих инспекторов.</p>
-                                            </div>
-                                            <div class="more">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
+                                    </dd>
+                                    <dd class="accordion-navigation">
+                                        <a href="#panel2b">Подведомственные организации</a>
+                                        <div id="panel2b" class="content">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="#">Контакты</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="news-item">
-                                            <div class="date">18.11.2014</div>
-                                            <div class="img">
-                                                <img src="img/news-img.jpg" alt="img"/>
-                                            </div>
-                                            <div class="title">
-                                                <a href="#">12 ноября стартовала экологическая акция «Покормите птиц!»</a>
-                                            </div>
-                                            <div class="body">
-                                                <p>Акция проводится в рамках Всероссийской акции «Покормите птиц!» Союза охраны птиц</p>
-                                            </div>
-                                            <div class="more">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
+                                    </dd>
+                                    <dd class="accordion-navigation active">
+                                        <a href="#panel3b">Пресс-служба</a>
+                                        <div id="panel3b" class="content active">
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="#">Выступления руководителей</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Министерство и СМИ</a>
+                                                </li>
+                                                <li class="active">
+                                                    <a href="#">Новости</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Архив новостей</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                        <div class="news-item">
-                                            <div class="date">20.11.2014</div>
-                                            <div class="title">
-                                                <a href="#">Вниманию охотпользователей!</a>
-                                            </div>
-                                            <div class="body">
-                                                <p>Министерством природных ресурсов Краснодарского края размещены на сайте вопросы по проверке знаний кандидатов в инспектора производственного охотничьего контроля. Охотпользователи Краснодарского края, заключившие охотхозяйственное соглашение, имеют право направить в министерство природных ресурсов Краснодарского края заявки на проверку знаний их специалистов с целью получения</p>
-                                            </div>
-                                            <div class="more">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
+                                    </dd>
+                                </dl>
+                                <div class="block-dop-menu">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon stop"></span>
+                                                <span class="text">Противодействие<br/>коррупции</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon help"></span>
+                                                <span class="text">В помощь<br/>предпринимателю</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon data"></span>
+                                                <span class="text">Открытые данные</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon aid"></span>
+                                                <span class="text">Бесплатная юридическая помощь населению</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="active" href="#">
+                                                <span class="icon evaluation"></span>
+                                                <span class="text">Оценка регулирующего воздействия</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="icon question"></span>
+                                                <span class="text">Задать вопрос</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="box-content">
+                                <div class="news-page">
+                                    <div class="news-content">
+                                        <div class="date">20.11.2014</div>
+                                        <h1 id="page-title">В парке «Солнечный остров» появится экологическая тропа</h1>
+                                        <div class="news-img">
+                                            <img src="img/news/img-1.jpg" alt="img"/>
                                         </div>
-                                        <div class="news-item">
-                                            <div class="date">18.11.2014</div>
-                                            <div class="img">
-                                                <img src="img/news-img.jpg" alt="img"/>
-                                            </div>
-                                            <div class="title">
-                                                <a href="#">12 ноября стартовала экологическая акция «Покормите птиц!»</a>
-                                            </div>
-                                            <div class="body">
-                                                <p>Акция проводится в рамках Всероссийской акции «Покормите птиц!» Союза охраны птиц</p>
-                                            </div>
-                                            <div class="more">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
+                                        <div class="body">
+                                            <p>Не многим известно, что парк «Солнечный остров» находится в границах памятника природы регионального значения «Парк 40-лет Победы» — созданный с целью сохранения ботанических объектов, имеющий природно-историческое назначение.</p>
+                                            <p>Основная идея экологической тропы — эколого-просветительская: сочетание активного отдыха посетителей экологической тропы в природной обстановке с расширением их кругозора; формирование экологической культуры — как части общей культуры взаимоотношений между человеком и природой.</p>
+                                            <p><a href="#">Маршрут экологической тропы</a> пройдёт по благоустроенной территории парка и её протяженность составит более двух километров. Каждая остановка на маршруте будет иметь свое название, пояснительное описание растений и животных — представленное на стендах. Экскурсанты познакомятся с различными видами лесных сообществ, подробно узнают о краснокнижных видах растений и животных лесопарковой зоны.</p>
+                                            <p>Проект схемы создания экологической тропы «Растения вокруг нас» в границах памятника природы регионального значения «40- лет Октября» разработан сотрудниками ГБУ КК «Управление ООПТ Краснодарского края», согласован с руководством МУП «Парк, инвестиции, туризм» города Краснодара и уже прошел предварительное согласование в министерстве природных ресурсов Краснодарского края.</p>
                                         </div>
-                                        <div class="news-item">
-                                            <div class="date">18.11.2014</div>
-                                            <div class="title">
-                                                <a href="#">Научно-практическая конференция «Охрана окружающей среды и обеспечение экологической безопасности Краснодарского края»</a>
+                                        <div class="news-slider">
+                                            <div class="item">
+                                                <img src="img/news/1.jpg" alt="img">
                                             </div>
-                                            <div class="body">
-                                                <p>16-17 октября 2014 года в г. Краснодар состоялась научно-практическая конференция «Охрана окружающей среды и обеспечение экологической безопасности Краснодарского края».знаний их специалистов с целью получения удостоверений производственных охотничьих инспекторов.</p>
+                                            <div class="item">
+                                                <img src="img/news/2.jpg" alt="img">
                                             </div>
-                                            <div class="more">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
+                                            <div class="item">
+                                                <img src="img/news/3.jpg" alt="img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/news/4.jpg" alt="img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/news/1.jpg" alt="img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/news/2.jpg" alt="img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/news/3.jpg" alt="img">
+                                            </div>
+                                            <div class="item">
+                                                <img src="img/news/4.jpg" alt="img">
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="news-controls">
+                                        <div class="left">
+                                            <a class="all-news" href="#">К списку новостей</a>
+                                        </div>
+                                        <div class="right">
+                                            <a class="prew-news" href="#">Предыдущая новость</a>
+                                            <a class="next-news" href="#">Следующая новость</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="all-news">
-                                    <a href="#">Все новости</a>
-                                </div>
-                            </div>
-                            <div class="block-dop-menu">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#">
-                                            <span class="icon stop"></span>
-                                            <span class="text">Противодействие<br/>коррупции</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="icon help"></span>
-                                            <span class="text">В помощь<br/>предпринимателю</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="icon data"></span>
-                                            <span class="text">Открытые данные</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="icon question"></span>
-                                            <span class="text">Задать вопрос</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="icon evaluation"></span>
-                                            <span class="text">Оценка регулирующего воздействия</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="icon aid"></span>
-                                            <span class="text">Бесплатная юридическая помощь населению</span>
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -579,6 +596,7 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+      $('.accordion').accordionAnimated();
     </script>
 
 </body>
