@@ -7,11 +7,22 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="js/source/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/vendor/modernizr.js"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/owl-carousel/owl.carousel.js"></script>
+    <script src="js/source/jquery.fancybox.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(".fancybox").fancybox({
+            openEffect	: 'fade',
+            closeEffect	: 'fade',
+            helpers		: {
+                title	: { type : 'over' }
+            }
+        });
+    </script>
 </head>
 <body class="not-front">
 
@@ -41,9 +52,7 @@
                     <div class="row">
                         <div class="small-12 columns">
                             <div class="box-logo left">
-                                <a class="logo left" href="/">
-                                    <img src="img/logo.png" alt="МИНИСТЕРСТВО ПРИРОДНЫХ РЕСУРСОВ КРАСНОДАРСКОГО КРАЯ"/>
-                                </a>
+                                <a class="logo left" href="/">МИНИСТЕРСТВО ПРИРОДНЫХ РЕСУРСОВ КРАСНОДАРСКОГО КРАЯ</a>
                                 <div class="site-name left">
                                     <h1>МИНИСТЕРСТВО ПРИРОДНЫХ РЕСУРСОВ<br/>КРАСНОДАРСКОГО КРАЯ</h1>
                                 </div>
@@ -447,8 +456,10 @@
                                 <div class="content-page">
                                     <div class="page">
                                         <h1 id="page-title">В парке «Солнечный остров» появится экологическая тропа</h1>
-                                        <div class="news-img">
-                                            <img src="img/news/img-1.jpg" alt="img"/>
+                                        <div class="content-img">
+                                            <a href="img/news/img-big.jpg" class="fancybox" data-fancybox-group="content-img" title="Проект схемы создания экологической тропы «Растения вокруг нас» в границах памятника природы регионального значения «40- лет Октября»">
+                                                <img src="img/news/img-1.jpg" alt="img"/>
+                                            </a>
                                         </div>
                                         <div class="body">
                                             <p>Не многим известно, что парк «Солнечный остров» находится в границах памятника природы регионального значения «Парк 40-лет Победы» — созданный с целью сохранения ботанических объектов, имеющий природно-историческое назначение.</p>
@@ -632,6 +643,9 @@
             </div>
         </div>
     </div>
+
+    <div id="layout"></div>
+    <div id="layout-resources"></div>
 
     <script src="js/foundation.min.js"></script>
     <script>
