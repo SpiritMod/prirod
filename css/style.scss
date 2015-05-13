@@ -1471,6 +1471,283 @@ ul.pagination {
               background: #10747c;
             }
           }
+          ul {
+            display: inline-block;
+            width: 100%;
+            margin: 0 0;
+            list-style: none;
+            li {
+              width: 100%;
+              a {
+                padding: 4px 0 4px 30px;
+                display: block;
+                width: 100%;
+                color: #fff; // text color
+                font-family: "Arial Narrow";
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1.2;
+                position: relative;
+                &:after {
+                  content: "";
+                  width: 14px;
+                  height: 1px;
+                  background: #fff;
+                  display: block;
+                  position: absolute;
+                  left: 10px;
+                  top: 13px;
+                }
+                &:hover {
+                  background: #10747c;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.accordion-dop-menu {
+  margin: 20px 0;
+  .accordion-navigation {
+    &.active {
+      > a {
+        background: #147185;
+        .text {
+          color: #fff;
+        }
+        .icon {
+          &.stop {
+            background: url('../img/svg-icons/sourse/stop_corruption-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.help {
+            background: url('../img/svg-icons/sourse/help_entrepreneurs-smol-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.data {
+            background: url('../img/svg-icons/sourse/open_data-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.question {
+            background: url('../img/svg-icons/sourse/ask_question-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.evaluation {
+            background: url('../img/svg-icons/sourse/evaluation-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.aid {
+            background: url('../img/svg-icons/sourse/free_legal_aid-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+        }
+      }
+    }
+    > a {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 68px;
+      padding: 0 0 0 54px;
+      background: #fff;
+      @include transition(all 0.4s ease 0s);
+      &:hover {
+        background: #147185;
+        .text {
+          color: #fff;
+        }
+        .icon {
+          &.stop {
+            background: url('../img/svg-icons/sourse/stop_corruption-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.help {
+            background: url('../img/svg-icons/sourse/help_entrepreneurs-smol-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.data {
+            background: url('../img/svg-icons/sourse/open_data-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.question {
+            background: url('../img/svg-icons/sourse/ask_question-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.evaluation {
+            background: url('../img/svg-icons/sourse/evaluation-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.aid {
+            background: url('../img/svg-icons/sourse/free_legal_aid-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+        }
+      }
+      &.active {
+        background: #147185;
+        .text {
+          color: #fff;
+        }
+        .icon {
+          &.stop {
+            background: url('../img/svg-icons/sourse/stop_corruption-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.help {
+            background: url('../img/svg-icons/sourse/help_entrepreneurs-smol-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.data {
+            background: url('../img/svg-icons/sourse/open_data-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.question {
+            background: url('../img/svg-icons/sourse/ask_question-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.evaluation {
+            background: url('../img/svg-icons/sourse/evaluation-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+          &.aid {
+            background: url('../img/svg-icons/sourse/free_legal_aid-active.svg') no-repeat center transparent;
+            @include background-size(auto 42px);
+          }
+        }
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 0.1%;
+      }
+      .icon {
+        position: absolute;
+        display: block;
+        left: 4px;
+        top: 13px;
+        &.stop {
+          display: block;
+          width: 35px;
+          height: 42px;
+          background: url('../img/svg-icons/sourse/stop_corruption.svg') no-repeat center transparent;
+          @include background-size(auto 42px);
+        }
+        &.help {
+          display: block;
+          width: 35px;
+          height: 42px;
+          background: url('../img/svg-icons/sourse/help_entrepreneurs-smol.svg') no-repeat center transparent;
+          @include background-size(auto 42px);
+        }
+        &.data {
+          display: block;
+          width: 44px;
+          height: 42px;
+          background: url('../img/svg-icons/sourse/open_data.svg') no-repeat center transparent;
+          @include background-size(auto 42px);
+        }
+        &.question {
+          display: block;
+          width: 43px;
+          height: 42px;
+          top: 15px;
+          background: url('../img/svg-icons/sourse/ask_question.svg') no-repeat center transparent;
+          @include background-size(auto 42px);
+        }
+        &.evaluation {
+          display: block;
+          width: 42px;
+          height: 42px;
+          background: url('../img/svg-icons/sourse/evaluation.svg') no-repeat center transparent;
+          @include background-size(auto 42px);
+        }
+        &.aid {
+          display: block;
+          width: 42px;
+          height: 42px;
+          background: url('../img/svg-icons/sourse/free_legal_aid.svg') no-repeat center transparent;
+          @include background-size(auto 42px);
+        }
+      }
+      .text {
+        display: inline-block;
+        max-width: 96.9%;
+        vertical-align: middle;
+        color: #137185; // text color
+        font-family: "Arial";
+        font-size: 14px;
+        text-decoration: underline;
+        line-height: 1.2;
+      }
+    }
+    .content {
+      padding: 0;
+      background: #147185!important;
+      &.active {
+        background: #147185;
+      }
+      ul.sub-menu {
+        margin: 0 0;
+        list-style: none;
+        background: transparent;
+        li {
+          width: 100%;
+          &.active {
+            background: #10747c;
+            font-weight: bold;
+          }
+          a {
+            padding: 4px 0 4px 10px;
+            display: block;
+            width: 100%;
+            color: #fff; // text color
+            font-family: "Arial Narrow";
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.2;
+            &:hover {
+              background: #14b7a2;
+            }
+          }
+          ul {
+            display: inline-block;
+            width: 100%;
+            margin: 0 0;
+            list-style: none;
+            li {
+              width: 100%;
+              a {
+                padding: 4px 0 4px 30px;
+                display: block;
+                width: 100%;
+                color: #fff; // text color
+                font-family: "Arial Narrow";
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1.2;
+                position: relative;
+                &:after {
+                  content: "";
+                  width: 14px;
+                  height: 1px;
+                  background: #fff;
+                  display: block;
+                  position: absolute;
+                  left: 10px;
+                  top: 13px;
+                }
+                &:hover {
+                  background: #14b7a2;
+                }
+              }
+            }
+          }
         }
       }
     }
